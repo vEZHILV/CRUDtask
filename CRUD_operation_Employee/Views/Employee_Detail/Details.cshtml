@@ -1,0 +1,50 @@
+﻿@model CRUD_operation_Employee.Models.Employee_Detail
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Employee_Detail</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Employee_Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Employee_Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Employee_ID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Employee_ID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Designation)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Designation)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Salary)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Salary)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
